@@ -1,4 +1,16 @@
 {
+    "aws/aws-sdk-php": {
+        "version": "3.133.16"
+    },
+    "beberlei/assert": {
+        "version": "v3.2.7"
+    },
+    "bnnvara/simple-bus-aws-bridge": {
+        "version": "0.3"
+    },
+    "bnnvara/simple-bus-aws-bridge-bundle": {
+        "version": "v0.5"
+    },
     "doctrine/annotations": {
         "version": "1.0",
         "recipe": {
@@ -74,14 +86,85 @@
     "doctrine/reflection": {
         "version": "v1.1.0"
     },
+    "guzzlehttp/guzzle": {
+        "version": "6.5.2"
+    },
+    "guzzlehttp/promises": {
+        "version": "v1.3.1"
+    },
+    "guzzlehttp/psr7": {
+        "version": "1.6.1"
+    },
+    "hoa/compiler": {
+        "version": "3.17.08.08"
+    },
+    "hoa/consistency": {
+        "version": "1.17.05.02"
+    },
+    "hoa/event": {
+        "version": "1.17.01.13"
+    },
+    "hoa/exception": {
+        "version": "1.17.01.16"
+    },
+    "hoa/file": {
+        "version": "1.17.07.11"
+    },
+    "hoa/iterator": {
+        "version": "2.17.01.10"
+    },
+    "hoa/math": {
+        "version": "1.17.05.16"
+    },
+    "hoa/protocol": {
+        "version": "1.17.01.14"
+    },
+    "hoa/regex": {
+        "version": "1.17.01.13"
+    },
+    "hoa/stream": {
+        "version": "1.17.02.21"
+    },
+    "hoa/ustring": {
+        "version": "4.17.01.16"
+    },
+    "hoa/visitor": {
+        "version": "2.17.01.16"
+    },
+    "hoa/zformat": {
+        "version": "1.17.01.10"
+    },
     "jdorn/sql-formatter": {
         "version": "v1.2.17"
+    },
+    "jms/metadata": {
+        "version": "2.1.0"
+    },
+    "jms/serializer": {
+        "version": "3.4.0"
+    },
+    "jms/serializer-bundle": {
+        "version": "3.0",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "3.0",
+            "ref": "384cec52df45f3bfd46a09930d6960a58872b268"
+        },
+        "files": [
+            "config/packages/dev/jms_serializer.yaml",
+            "config/packages/jms_serializer.yaml",
+            "config/packages/prod/jms_serializer.yaml"
+        ]
     },
     "liip/functional-test-bundle": {
         "version": "3.3.0"
     },
     "liip/test-fixtures-bundle": {
         "version": "1.6.0"
+    },
+    "mtdowling/jmespath.php": {
+        "version": "2.5.0"
     },
     "myclabs/deep-copy": {
         "version": "1.9.5"
@@ -142,8 +225,14 @@
     "psr/container": {
         "version": "1.0.0"
     },
+    "psr/http-message": {
+        "version": "1.0.1"
+    },
     "psr/log": {
         "version": "1.1.2"
+    },
+    "ralouphie/getallheaders": {
+        "version": "3.0.3"
     },
     "sebastian/code-unit-reverse-lookup": {
         "version": "1.0.1"
@@ -180,6 +269,27 @@
     },
     "sebastian/version": {
         "version": "2.0.1"
+    },
+    "simple-bus/asynchronous": {
+        "version": "v3.0.1"
+    },
+    "simple-bus/asynchronous-bundle": {
+        "version": "v3.1.1"
+    },
+    "simple-bus/jms-serializer-bridge": {
+        "version": "v2.0.3"
+    },
+    "simple-bus/jms-serializer-bundle-bridge": {
+        "version": "v3.0.2"
+    },
+    "simple-bus/message-bus": {
+        "version": "v3.0.3"
+    },
+    "simple-bus/serialization": {
+        "version": "v3.0.1"
+    },
+    "simple-bus/symfony-bridge": {
+        "version": "v5.3.1"
     },
     "symfony/browser-kit": {
         "version": "v4.4.4"

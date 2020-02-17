@@ -7,6 +7,5 @@ comment:
   controller: App\Comment\Infrastructure\CommentEndpoint::getCommentAsJson
 
 post-comment:
-  path: /api/comment/comment
-  controller: App\Comment\Infrastructure\CommentPostEndpoint::sendCommentToEventBus
-  methods: POST
+  path: /api/comment/postcomment
+  controller: App\Comment\Infrastructure\CommentPostEndpoint::createComment

@@ -2,7 +2,7 @@
 
 namespace App\Comment\Domain\Entity;
 
-class Comment
+class Comment implements \JsonSerializable
 {
     private $id;
     private $userId;
@@ -34,5 +34,16 @@ class Comment
     public function getComment(): string
     {
         return $this->comment;
+    }
+
+    public function jsonSerialize(): array
+    {
+        return [
+            'comment' =>[
+                'userId' => $this->getUserId(),
+                'topicId' => $this->getTopicId(),
+                'comment' => $this->getComment()
+            ]
+        ];
     }
 }

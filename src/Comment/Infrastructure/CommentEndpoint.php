@@ -21,15 +21,7 @@ class CommentEndpoint extends AbstractController
         /** @var Comment $comment */
         $comment = $this->commentRepository->getCommentById($commentId);
 
-        $commentResponse = [
-            'comment' =>[
-                'userId' => $comment->getUserId(),
-                'topicId' => $comment->getTopicId(),
-                'comment' => $comment->getComment()
-            ]
-        ];
-
-        return new JsonResponse($commentResponse);
+        return new JsonResponse($comment);
     }
 
 }
