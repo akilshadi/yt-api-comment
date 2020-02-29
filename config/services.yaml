@@ -15,3 +15,7 @@ services:
     App\Comment\Infrastructure\CommentEndpoint:
         arguments:
             $commentRepository: '@App\Comment\Infrastructure\CommentRepository'
+
+    App\Comment\Infrastructure\CommentPostEndpoint:
+        arguments:
+            $eventBus: '@simple_bus.event_bus'

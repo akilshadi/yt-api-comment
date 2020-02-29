@@ -16,4 +16,21 @@ class CommentTest extends TestCase
         $this->assertEquals('b', $comment->getTopicId());
         $this->assertEquals('c', $comment->getComment());
     }
+
+    /** @test */
+    public function aCommentCanBeSerialized()
+    {
+        $comment = new Comment('a','b','c');
+
+        $this->assertJsonStringEqualsJsonString(
+            '{
+                "comment": {
+                "userId": "a",
+                "topicId": "b",
+                "comment": "c"
+            }
+        }', json_encode($comment)
+        );
+
+    }
 }
